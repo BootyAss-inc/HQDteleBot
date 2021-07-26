@@ -1,0 +1,59 @@
+{
+    "names": [
+        "Jai Else",
+        "Cadfael Mindaugas",
+        "Alexis Dipti",
+        "Karolína Ganesh",
+        "Mariska Donagh"
+    ],
+    "products": [{
+            "name": "Banana",
+            "taste": "Банан",
+            "brand": "HQD",
+            "amount": "10"
+        },
+        {
+            "name": "Pineapple",
+            "taste": "Ананас",
+            "brand": "HQD",
+            "amount": "10"
+        },
+        {
+            "name": "LycheeMint",
+            "taste": "Личи и Мята",
+            "brand": "HQD",
+            "amount": "10"
+        },
+        {
+            "name": "MangoGuava",
+            "taste": "Манго и Гуава",
+            "brand": "HQD",
+            "amount": "10"
+        },
+        {
+            "name": "Energetic",
+            "taste": "Энергетик",
+            "brand": "HQD",
+            "amount": "10"
+        },
+        {
+            "name": "Blueberry",
+            "taste": "Черника",
+            "brand": "HQD",
+            "amount": "10"
+        },
+        {
+            "name": "BlackCurrant",
+            "taste": "Черная смородина",
+            "brand": "HQD",
+            "amount": "10"
+        },
+        {
+            "name": "BlueberryRaspberry",
+            "taste": "Черника и Малина",
+            "brand": "HQD",
+            "amount": "10"
+        }
+    ]
+
+}
