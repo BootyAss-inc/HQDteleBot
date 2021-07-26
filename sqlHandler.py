@@ -1,6 +1,7 @@
 import pprint
 import sqlite3
 import json
+from settings import settings as SETS
 
 
 class SQLHandler():
@@ -52,11 +53,6 @@ class SQLHandler():
             phone       varchar(30) null
         )
         ''')
-        self.execute('''
-        create index clientsAddress
-        on Clients (id)
-        include (address)
-        ''')
 
     def createOrders(self):
         # status: Собирается, Собран, Доставляется, Доставлен
@@ -68,11 +64,6 @@ class SQLHandler():
             status      varchar(30) null,
             foreign key (client_id) references Clients(id)
         )
-        ''')
-        self.execute('''
-        create index ordersAddress
-        on Clients (id)
-        include (client_id)
         ''')
 
     def createOrderedItems(self):
@@ -108,11 +99,6 @@ class SQLHandler():
             foreign key (client_id) references Clients(id),
 			foreign key (product_id) references Products(id)
         )
-        ''')
-        self.execute('''
-        create index stashedIDs
-        on StashedItems (id)
-        include (client_id, product_id)
         ''')
 
     def insertProducts(self):
@@ -207,7 +193,7 @@ class SQLHandler():
 
 
 def main():
-    handle = SQLHandler('test.db')
+    handle = SQLHandler(SETS['db'])
 
     while True:
         try:
